@@ -1,0 +1,47 @@
+<!-------------Ouverture fichier html--------------->
+<!DOCTYPE html>
+<html>
+<html lang="fr">
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{asset('bundles/css/cv.css')}}"/>
+<link rel="icon" type="image/png" href="./pic/fav-icon-tf.png" /><!--favicon-->
+
+<!-------------Head---------------------------------->
+	<head>
+
+ 	  <title>CV</title>
+	</head>
+<!------------body----------------------------------->
+
+	<body>
+	      <header id="header">
+		<h1>Thibaut Figuères : Développeur Web</h1>
+	      </header>
+
+                    <div id="container">
+
+<!-----------------------Nav-------------------------->
+			<nav id="nav">
+				<ul>
+				  <li class="menu"><a href="{{ path ("form") }} ">Formation</a></li>
+					<li class="menu"><a href="{{ path ("exp") }} ">Expériences</a></li>
+					<li class="menu"><a href="{{ path ("loi") }} ">Loisirs</a></li>
+					<li class="menu"><a href="{{ path ("moi") }} ">Moi</a></li>
+				</ul>
+			</nav>
+
+{%block section %}
+    {%endblock%}
+<!-----------------FOOTER---------------------->
+
+
+		<footer id="f">
+			<h4>Contactez-moi</h4>
+
+				<p>thibaut.figueres@gmail.com</p>
+
+		</footer>
+
+	      </div>
+	</body>
+</html>
